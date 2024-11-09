@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Product Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Eco-Friendly Product Store</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#why-us">Why Choose Us</a>
+            <a href="#calculator">Carbon Footprint Calculator</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+    
+    
+    <section id="home">
+        <h2>Our Sustainable Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/product1.webp" alt="Reusable Water Bottle">
+                <h3>Reusable Water Bottle</h3>
+                <p>Reduce plastic waste with this eco-friendly water bottle.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="product">
+                <img src="images/product2.webp" alt="Bamboo Toothbrush">
+                <h3>Bamboo Toothbrush</h3>
+                <p>Eco-friendly toothbrush made from sustainable bamboo.</p>
+                <button>Learn More</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="why-us">
+        <h2>Why Choose Us?</h2>
+        <p>We offer sustainably sourced products designed to reduce your environmental impact.</p>
+        <ul>
+            <li>Environmentally conscious manufacturing</li>
+            <li>Plastic-free packaging</li>
+            <li>Support for eco-initiatives</li>
+        </ul>
+    </section>
+
+   
+    <section id="calculator">
+        <h2>Carbon Footprint Calculator</h2>
+        <label for="product">Product Type:</label>
+        <select id="product">
+            <option value="bottle">Reusable Bottle</option>
+            <option value="toothbrush">Bamboo Toothbrush</option>
+        </select>
+        <label for="usage">Usage (hours per week):</label>
+        <input type="number" id="usage" min="0" placeholder="Enter usage">
+        <button onclick="calculateFootprint()">Calculate</button>
+        <p id="result"></p>
+    </section>
+
+ 
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
